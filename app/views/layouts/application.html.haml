@@ -9,8 +9,10 @@
     %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport', charset: 'utf-8'}
 
   %body
-    .background
-      .flex-container
+    .background#background
+      #superPanel.sidepanel
+        = render 'layouts/sidepanel'
+      #superFlex.flex-container
         = render 'layouts/navbar'
         = render 'layouts/pic'
         = render 'layouts/info'
