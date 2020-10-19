@@ -98,7 +98,7 @@ button:hover .span-container{
   background-color: brown;
   height: 90%;
   width: 61%;
-  min-width: 85px;
+  min-width: 350px;
   min-height: 515px;
 }
 
@@ -126,7 +126,7 @@ button:hover .span-container{
 }
 
  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .flex-container {
     min-height: 100vh;
     min-width: 100vw;
@@ -147,7 +147,7 @@ button:hover .span-container{
 }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .flex-container {
     width: 100vw;
   }
