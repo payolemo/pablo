@@ -36,8 +36,8 @@
 .nav-container {
   background-color: gray;
   height: 90%;
-  width: 75px;
-  min-width: 75px;
+  width: 60px;
+  min-width: 60px;
   min-height: 515px;
 }
 
@@ -51,11 +51,11 @@
   border: none;
   background-color: white;
   .span-container {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 35%;
     background-color: yellow;
     display: flex;
-    margin-left: 25%;
+    margin-left: 30%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -63,8 +63,8 @@
     .burguer-bar {
       width: 100%;
       display: block;
-      border-top: 4px solid black;
-      border-radius: 3px;
+      border-top: 3px solid black;
+      border-radius: 5vw;
     }
   }
 }
@@ -77,6 +77,7 @@
   transition: width .2s, height .2s, margin-left .2s;
   .burguer-bar {
     transition: border-top .2s;
+    border-radius: 5vw;
   }
 }
 
@@ -84,13 +85,14 @@
   background-color: white;
   height: 100%;
   width: 35%;
+  min-width: 240px;
 }
 
 .info-container {
   background-color: brown;
   height: 90%;
   width: 61%;
-  min-width: 75px;
+  min-width: 85px;
   min-height: 515px;
 }
 
@@ -129,11 +131,11 @@
   }
   .nav-container {
     min-height: 100vh;
-    width: 15%;
+    min-width: 55px;
   }
   .info-container {
     min-height: 100vh;
-    min-width: 85%;
+    min-width: 87%;
   }
 }
 
@@ -154,6 +156,6 @@
  /* Large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1280px) {
   .flex-container {
-    max-width: 1280px;
+    max-width: 1080px;
   }
 } 
