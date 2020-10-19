@@ -6,18 +6,18 @@ window.onload = function() {
     buttonContainer.addEventListener("click",   function() {
       getPanel.style.width = '290px'
       getPanel.style.transitionDuration = '.2s'
-      getLayer.style.transitionDelay = '.2s'
-      getLayer.style.transitionDuration = '.2s'
-      getLayer.style.animationDirection = 'normal'
-      getLayer.style.width = '100vw'
+      getLayer.style.transitionDelay = '.5s'
+      getLayer.style.transitionDuration = '1s'
+      getLayer.style.display = 'block'
+      getLayer.style.opacity = '25%'
       function unToggleNav() {
         getLayer.addEventListener("click", function() {
-          getLayer.style.width = '0vw'
-          getLayer.style.animationDirection = 'reverse'
-          getLayer.style.transitionDuration = '.2s'
-          getLayer.style.transitionDelay = '.2s'
+          var applyDuration = getLayer.style.opacity = '0%'
+          var applyVisivility = getLayer.style.display = 'none'
+          applyDuration.transitionDuration = '.2s'
+          applyVisivility.transitionDelay = '.2s'
           getPanel.style.width = '0'
-          getPanel.style.transitionDuration = '.2s'
+          getPanel.style.transitionDuration = '.4s'
         });
       }
       unToggleNav();
