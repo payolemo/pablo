@@ -60,7 +60,7 @@ button:focus {
   max-width: 100%;
   max-height: 65px;
   border: none;
-  background-color: rgb(107, 228, 255);
+  background-color: #6be4ff;
   .span-container {
     width: 40%;
     height: 35%;
@@ -98,6 +98,25 @@ button:hover .span-container{
   background-size: cover;
   background-position: center;
   background-attachment: relative;
+  box-shadow: 0 4px 15px 0 #00000033, 0 6px 35px 0 #00000033;
+  .social-container {
+    min-height: 100%;
+    min-width: 100%;
+    display: inline-block;
+    .pic-layer {
+      height: 35px;
+      min-width: 100%;
+      background-color: #6be4ff;
+      margin-top: 86vh;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-evenly;
+      #ico {
+        background-color: black;
+        width: 37px;
+      }
+    }
+  }
 }
 
 .info-container {
@@ -169,7 +188,7 @@ button:hover .span-container{
  /* Large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1280px) {
   .flex-container {
-    max-width: 1080px;
+    max-width: 1180px;
   }
   .pic-container {
     width: 70%;
