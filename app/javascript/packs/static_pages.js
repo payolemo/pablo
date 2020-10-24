@@ -4,12 +4,11 @@ window.onload = function() {
   var getLayer = document.getElementById('layer');
   function toggleNav() {
     buttonContainer.addEventListener("click",   function() {
-      var layerDelay = getLayer.style.opacity = '25%'
-      getPanel.style.width = '290px'
-      getPanel.style.transitionDuration = '.2s'
-      layerDelay.transitionDelay = '.5s'
-      layerDelay.transitionDuration = '1s'
+      getLayer.style.opacity = '28%'
+      getLayer.style.transitionDuration = '.5s'
       getLayer.style.display = 'block'
+      getPanel.style.width = '290px'
+      getPanel.style.transitionDuration = '.5s'
       function unToggleNav() {
         getLayer.addEventListener("click", function() {
           var applyDuration = getLayer.style.opacity = '0%'

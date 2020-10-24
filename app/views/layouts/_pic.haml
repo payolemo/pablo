@@ -1,8 +1,10 @@
 .pic-container
   .social-container#social
     .pic-layer#picLayer
-      .gh#ico
-        .gh-ico
-          = image_tag 'github(1).svg'
-      .cp#ico
-      .li#ico
+      .social-button-container#ico
+        .gh-ico#ico
+          = image_tag 'github(1).svg', class: 'ghimg'
+        .cp#ico
+          = image_tag 'codepen.svg', class: 'copeimg'
+        .li#ico
+          = image_tag 'linkedin.svg', class: 'linimg'
