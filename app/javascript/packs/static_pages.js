@@ -2,6 +2,7 @@ window.onload = function() {
   var buttonContainer = document.getElementById('hamburguerContainer');
   var getPanel = document.getElementById('menu');
   var getLayer = document.getElementById('layer');
+
   function toggleNav() {
     buttonContainer.addEventListener("click",   function() {
       getLayer.style.opacity = '28%'

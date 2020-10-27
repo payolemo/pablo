@@ -38,18 +38,19 @@
 }
 
 .nav-container {
-  background-color: #010009;
+  background-color: #1c1e1f;
   height: 90%;
   width: 60px;
   min-width: 60px;
   min-height: 515px;
+  max-height: 90%;
+  display: flex;
+  flex-flow: column;
 }
 
-button:focus {
-  border-style: none;
-  border-width: none;
-  border:none;
-  outline: none;
+nav {
+  height: 100%;
+  display: contents;
 }
 
 .burguer-container {
@@ -80,10 +81,6 @@ button:focus {
   }
 }
 
-.sidepanel {
-  z-index: 1;
-}
-
 button:hover .span-container{
   display: flex;
   width: 60%;
@@ -94,9 +91,110 @@ button:hover .span-container{
   }
 }
 
+button:focus {
+  border-style: none;
+  border-width: none;
+  border:none;
+  outline: none;
+}
+
+.nav-buttons-container {
+  width: 100%;
+  height: 100%;
+  display:contents;
+  .nav-buttons-layer {
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
+    #navIco {
+      width: 100%;
+      height: 65px;
+      border-radius: 32px;
+    }
+  }
+}
+
+#navIco:hover {
+ border: 1.5px solid #6be4ff;
+}
+
+#navIcoLayer {
+  filter: invert(99%) sepia(1%) saturate(134%) hue-rotate(280deg) brightness(117%) contrast(100%);
+}
+
+#navIcoLayer:hover {
+  filter: invert(87%) sepia(17%) saturate(2075%) hue-rotate(161deg) brightness(100%) contrast(102%);
+}
+
+.about-ico {
+  margin-top: 150px;
+}
+
+.boyico {
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 90%;
+  width: 90%;
+}
+
+.fileico {
+  margin-top: 6px;
+  margin-left: 6px;
+  height: 80%;
+  width: 80%;
+}
+
+.mortico {
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 85%;
+  width: 85%;
+}
+
+.gearsico {
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 80%;
+  width: 80%;
+}
+
+.settings {
+  margin-bottom: 80px;
+}
+
+.downloads {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  .download {
+    width: 100%;
+    height: 65px;
+    border-radius: 32px;
+    margin-top: -45px;
+    .downico {
+      width: 90%;
+      height: 90%;
+      margin-top: 3px;
+      margin-left: 3px;
+    }
+  }
+}
+
+.download:hover {
+  border: 1px solid #6be4ff;
+}
+
+.sidepanel {
+  z-index: 1;
+}
+
 .pic-container {
   height: 100%;
-  width: 35%;
+  width: 23%;
   min-width: 240px;
   background-image: url("me.png");
   background-size: cover;
@@ -162,7 +260,7 @@ button:hover .span-container{
 }
 
 .info-container {
-  background-color: #010009;
+  background-color: #1c1e1f;
   height: 90%;
   width: 61%;
   min-width: 350px;
