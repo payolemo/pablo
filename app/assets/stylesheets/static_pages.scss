@@ -4,17 +4,14 @@
 @import 'bootstrap';
 
 .background {
-  max-height: 100vh;
   min-height: 100vh;
   min-width: 100vw;
-  max-width: 100vw;
   height: 100vh;
   width: 100vw;
   background-color: #041215;
   display: flex;
   flex-flow: row;
   justify-content: center;
-  align-content: center;
   align-items: center;
   overflow-x: hidden;
 }
@@ -32,9 +29,9 @@
   min-height: 515px;
   height: 95vh;
   flex-flow: row;
-  justify-content: center;
   align-content: center;
   align-items: center;
+  position: static;
 }
 
 .nav-container {
@@ -46,6 +43,7 @@
   max-height: 90%;
   display: flex;
   flex-flow: column;
+  position: static;
 }
 
 nav {
@@ -134,7 +132,7 @@ button:focus {
 
 .boyico {
   margin-top: 2px;
-  margin-left: 2px;
+  margin-left: 3px;
   height: 90%;
   width: 90%;
 }
@@ -195,11 +193,12 @@ button:focus {
 .pic-container {
   height: 100%;
   width: 23%;
+  position: relative;
   min-width: 240px;
+  max-width: 510px;
   background-image: url("me.png");
   background-size: cover;
   background-position: center;
-  background-attachment: relative;
   box-shadow: 0 4px 15px 0 #00000033, 0 6px 35px 0 #00000033;
   .social-container {
     min-height: 100%;
@@ -262,8 +261,7 @@ button:focus {
 .info-container {
   background-color: #1c1e1f;
   height: 90%;
-  width: 61%;
-  min-width: 350px;
+  width: 51%;
   min-height: 515px;
 }
 

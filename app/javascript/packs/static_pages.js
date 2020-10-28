@@ -24,4 +24,15 @@ window.onload = function() {
     });
   }
   toggleNav();
+
+  var eventTriggerer = document.getElementById('navIco')
+  var eventTarget = document.getElementById('infoContainer')
+
+  function rightPaneCollapsor() {
+    eventTriggerer.addEventListener("click", function() {
+      eventTarget.style.width = '0%'
+      eventTarget.style.transition= 'all 1s'
+    });
+  }
+  rightPaneCollapsor();
 }
