@@ -4,7 +4,7 @@ window.onload = function() {
   var getLayer = document.getElementById('layer');
 
   function toggleNav() {
-    buttonContainer.addEventListener("click",   function() {
+    buttonContainer.addEventListener("click", function() {
       getLayer.style.opacity = '28%'
       getLayer.style.transitionDuration = '.5s'
       getLayer.style.display = 'block'
@@ -24,15 +24,27 @@ window.onload = function() {
     });
   }
   toggleNav();
+//NOW APPLY THIS TO ALL NAVICO ID'S
+  var eventTrigger = document.getElementById('navIco');
+  var eventTarget = document.getElementById('infoContainer');
 
-  var eventTriggerer = document.getElementById('navIco')
-  var eventTarget = document.getElementById('infoContainer')
-
-  function rightPaneCollapsor() {
-    eventTriggerer.addEventListener("click", function() {
-      eventTarget.style.width = '0%'
-      eventTarget.style.transition= 'all 1s'
-    });
-  }
-  rightPaneCollapsor();
+  eventTrigger.addEventListener('click', function() {
+    eventTarget.style.width = '0%'
+    eventTarget.style.transitionDuration = '1s'
+    eventTarget.style.minWidth = '0%'
+    setTimeout(function minWidthDecider() {
+      eventTarget.style.width = '51%'
+      eventTarget.style.transitionDuration = '1s'
+      var maxRes = window.matchMedia('(max-width: 650px)');
+      if(maxRes.matches) {
+        eventTarget.style.minWidth = '88%'
+      }
+      else {
+        eventTarget.style.minWidth = '0%'
+      }
+      maxRes.addListener(minWidthDecider);
+    },1500)
+  });
+  //NOW APPLY THIS TO ALL NAVICO ID'S
 }
+
