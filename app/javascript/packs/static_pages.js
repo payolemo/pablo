@@ -25,26 +25,29 @@ window.onload = function() {
   }
   toggleNav();
 //NOW APPLY THIS TO ALL NAVICO ID'S
-  var eventTrigger = document.getElementById('navIco');
+  var eventTrigger = document.getElementsByClassName('nav-svg');
   var eventTarget = document.getElementById('infoContainer');
 
-  eventTrigger.addEventListener('click', function() {
-    eventTarget.style.width = '0%'
-    eventTarget.style.transitionDuration = '1s'
-    eventTarget.style.minWidth = '0%'
-    setTimeout(function minWidthDecider() {
-      eventTarget.style.width = '51%'
+  for (var i = 0; i <= eventTrigger.length; i++) {
+    var elements = eventTrigger[i]
+    elements.addEventListener('click', function() {
+      eventTarget.style.width = '0%'
       eventTarget.style.transitionDuration = '1s'
-      var maxRes = window.matchMedia('(max-width: 650px)');
-      if(maxRes.matches) {
-        eventTarget.style.minWidth = '88%'
-      }
-      else {
-        eventTarget.style.minWidth = '0%'
-      }
-      maxRes.addListener(minWidthDecider);
-    },1500)
-  });
+      eventTarget.style.minWidth = '0%'
+      setTimeout(function minWidthDecider() {
+        eventTarget.style.width = '51%'
+        eventTarget.style.transitionDuration = '1s'
+        var maxRes = window.matchMedia('(max-width: 650px)');
+        if(maxRes.matches) {
+          eventTarget.style.minWidth = '88%'
+        }
+        else {
+          eventTarget.style.minWidth = '0%'
+        }
+        maxRes.addListener(minWidthDecider);
+      },1500)
+    });
+  }
   //NOW APPLY THIS TO ALL NAVICO ID'S
 }
 
