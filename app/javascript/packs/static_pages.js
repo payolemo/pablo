@@ -24,13 +24,35 @@ window.onload = function() {
     });
   }
   toggleNav();
-//NOW APPLY THIS TO ALL NAVICO ID'S
+
   var eventTrigger = document.getElementsByClassName('nav-svg');
   var eventTarget = document.getElementById('infoContainer');
 
   for (var i = 0; i <= eventTrigger.length; i++) {
-    var elements = eventTrigger[i]
+    var elements = eventTrigger[i];
     elements.addEventListener('click', function() {
+      var contentSecuencer = event.target
+      if(contentSecuencer.className == 'fileico') {
+        document.getElementById('prof').style.display = 'none'
+        document.getElementById('forma').style.display = 'none'
+        document.getElementById('set').style.display = 'none'
+        document.getElementById('exp').style.display = 'block'
+      } else if(contentSecuencer.className == 'mortico') {
+        document.getElementById('prof').style.display = 'none'
+        document.getElementById('exp').style.display = 'none'
+        document.getElementById('set').style.display = 'none'
+        document.getElementById('forma').style.display = 'block'
+      } else if(contentSecuencer.className == 'gearsico') {
+        document.getElementById('forma').style.display = 'none'
+        document.getElementById('prof').style.display = 'none'
+        document.getElementById('exp').style.display = 'none'
+        document.getElementById('set').style.display = 'block'
+      } else {
+        document.getElementById('prof').style.display = 'block'
+        document.getElementById('forma').style.display = 'none'
+        document.getElementById('set').style.display = 'none'
+        document.getElementById('exp').style.display = 'none'
+      }
       eventTarget.style.width = '0%'
       eventTarget.style.transitionDuration = '1s'
       eventTarget.style.minWidth = '0%'
@@ -48,6 +70,5 @@ window.onload = function() {
       },1500)
     });
   }
-  //NOW APPLY THIS TO ALL NAVICO ID'S
 }
 

@@ -30,4 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  profile: "This is my profile Mothafucka mean I'm the one who stands in the pinacle of the human race"
+  experience: "This is my experience"
+  formation: "This is my formation"
+  settings: "These are the system settings"
