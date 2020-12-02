@@ -1,10 +1,90 @@
 .info-container#infoContainer
   .container#container
+
     .profile-info.info-wrapper#prof
-      %p= t 'profile'
+      .extract-wrapper#extractWrapper
+        %h2= t 'profile.extract_title'
+        %p= t 'profile.extract_html'
+      %hr
+      .companies-wrapper#companiesWrapper
+        %h2= t 'profile.companies_title'
+        .company-images#companyImages
+          .amco#amco
+            = image_tag 'amco-happy.png', class: 'amcoico'
+          .tiba#tiba
+            = image_tag 'tiba-it.png', class: 'tibaico'
+          .mr-fix#mrFix
+            = image_tag 'mr-fix.png', class: 'mrico'
+      %hr
+      .facts-wrapper#factsWrapper
+        %h2= t 'profile.facts_title'
+        .commit-wrapper#commitWrapper
+          %p.amount= t 'profile.commit_fact_number_html'
+          %p.fact= t 'profile.commit_fact_html'
+        .project-wrapper#projectWrapper
+          %p.amount= t 'profile.project_fact_number_html'
+          %p.fact= t 'profile.project_fact_html'
+        .automation-wrapper#tautomationWrapper
+          %p.amount= t 'profile.automation_fact_number_html'
+          %p.fact= t 'profile.automation_fact_html'
+
     .experience-info.info-wrapper#exp
-      %br
-      %p= t 'experience'
+      %h2= t 'experience.experience_title'
+      .amco-wrapper#amcoWrapper
+        %p.company-title= t 'experience_amco.amco_title'
+        %p.company-duration= t 'experience_amco.amco_years'
+        %br
+        .amco-job#amcoJobNoc
+          %p.dutty-name= t'amco_noc.noc_name'
+          %p.dutty-time= t 'amco_noc.noc_time'
+          %p.dutty-description= t 'amco_noc.noc_description'
+          %br
+        .amco-job#amcoJobField
+          %p.dutty-name= t'amco_field.field_name'
+          %p.dutty-time= t 'amco_field.field_time'
+          %p.dutty-description= t 'amco_field.field_description'
+          %br
+        .amco-job#amcoJobadvisor
+          %p.dutty-name= t'amco_advisor.advisor_name'
+          %p.dutty-time= t 'amco_advisor.advisor_time'
+          %p.dutty-description= t 'amco_advisor.advisor_description'
+          %br
+        %hr
+      .tiba-wrapper#tibaWrapper
+        %p.company-title= t 'experience_tiba.tiba_title'
+        %p.company-duration= t 'experience_tiba.tiba_years'
+        %br
+        .tiba-job#tibaJobJr
+          %p.dutty-name= t'tiba_jr.jr_name'
+          %p.dutty-time= t 'tiba_jr.jr_time'
+          %p.dutty-description= t 'tiba_jr.jr_description'
+          %br
+        .tiba-job#tibaJobRemote
+          %p.dutty-name= t'tiba_remote.remote_name'
+          %p.dutty-time= t 'tiba_remote.remote_time'
+          %p.dutty-description= t 'tiba_remote.remote_description'
+          %br
+        %hr
+      .mr-wrapper#mrWrapper
+        %p.company-title= t 'experience_mr.mr_title'
+        %p.company-duration= t 'experience_mr.mr_years'
+        %br
+        .mr-job#mrJobModule
+          %p.dutty-name= t 'mr_module.module_name'
+          %p.dutty-time= t 'mr_module.module_time'
+          %p.dutty-description= t 'mr_module.module_description'
+          %br
+        %hr
+      .jabil-wrapper#jabilWrapper
+        %p.company-title= t 'experience_jabil.jabil_title'
+        %p.company-duration= t 'experience_jabil.jabil_years'
+        %br
+        .jabil-job#jabilJobTesting
+          %p.dutty-name= t'jabil_testing.testing_name'
+          %p.dutty-time= t 'jabil_testing.testing_time'
+          %p.dutty-description= t 'jabil_testing.testing_description'
+          %br
+
     .formation-info.info-wrapper#forma
       %br
       %br

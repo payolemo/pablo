@@ -1,0 +1,65 @@
+en:
+  experience: 
+    experience_title: "Experience"
+  #Amco
+  experience_amco:
+    amco_title: "Amco"
+    amco_years: "4 Year and 10 Months"
+
+  amco_noc:
+    noc_name: "Noc Analyst"
+    noc_time: "1 Year and 3 Months"
+    noc_description: "Systems monitoring, Incident management, Users management in Amco exclusive apps, ERP's
+    and CRM's, Jira cloud project Administration, Web development for internal projects."
+
+  amco_field:
+   field_name: "Field Engineer"
+   field_time: "3 Years and 4 Months"
+   field_description: "Analysis of customer reports, manual testing and documentation of release deliveries for new 
+   app updates, incident management, web and mobile application debugging, everything under agile methodologies besides
+   keeping highest levels of flexibility in workflows"
+
+  amco_advisor:
+    advisor_name: "Technology Advisor"
+    advisor_time: "1 Year and 6 Month"
+    advisor_description: "Give remote and on-site support to the hardware and software Amco exclusive, remote 
+    technical capacitation to technical and non-technical persons, remote support to iOS devices, attached to 
+     processes focused on high customer service ratings, App Manual testing of academic apps"
+#Tiba
+  experience_tiba:
+    tiba_title: "TIBA IT Services"
+    tiba_years: "1 Año y 6 Meses"
+
+  tiba_jr:
+    jr_name: "Jr Engineer"
+    jr_time: "1 Year and 1 Month"
+    jr_description: "Sap installation, unlock users, SAP instances configuration, workflows redirection, incident management 
+    with BMC Remedy also using ITIL V3 processes, user groups management with Active Directory, support and management to 
+    software applications developed by Pemex, user accounts management on Exchange 2010, preventive and corrective maintenance 
+    to Pemex computers."
+
+  tiba_remote:
+    remote_name: "Remote support engineer"
+    remote_time: "6 Months"
+    remote_description: "Give support remote to Pemex computers, manage and support self-developed applications, 
+    add computers remotely to the domain, advisory and support to Outlook, incident management under ITIL V3 processes."
+#Mr Fix
+  experience_mr:
+    mr_title: "Mr. Fix"
+    mr_years: "11 Months"
+
+  mr_module:
+   module_name: "Module Manager"
+   module_time: "11 Months"
+   module_description: "Preventive and corrective maintenance to computers and mobile devices to direct customers,
+    installation and selling of software and hardware, computer assembly, backups, deleted files recuperation, 
+    customer service, Windows passwords recoveries."
+#Jabil
+  experience_jabil:
+    jabil_title: "Jabil"
+    jabil_years: "6 Months"
+
+  jabil_testing:
+    testing_name: "Testing Technician"
+    testing_time: "6 Months"
+    testing_description: "Hardware stress testing to Cisco servers and embarkations."

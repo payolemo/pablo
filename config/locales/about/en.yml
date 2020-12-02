@@ -1,0 +1,15 @@
+en:
+  profile:
+    extract_title: "About Me"
+    extract_html: "I'm a dedicated, curious and adaptative person with more than 6 years of experience in many areas of the techinology industry.</br>
+    I've studied close than 3 years everything related to software development as a self-taught developer, specificly, I have experience in web development and web automation.</br>
+    Trough these years, I've continously growing due what I consider a hard and smart work compromise.</br>
+    Recently I just decided to find an oportunity as web developer which is the career that pasionates me."
+    companies_title: "Relevant Companies"
+    facts_title: "Principal Facts"
+    commit_fact_number_html: "140</br>"
+    commit_fact_html: "commits"
+    project_fact_number_html: "3</br>"
+    project_fact_html: "projects"
+    automation_fact_number_html: "10</br>"
+    automation_fact_html: "automated features"

@@ -284,6 +284,7 @@ button:focus {
   .info-wrapper {
     white-space: nowrap;
     overflow: hidden;
+    overflow-y: auto;
     text-overflow: ellipsis;
     height: 100%;
     p {

@@ -54,11 +54,11 @@ window.onload = function() {
         document.getElementById('exp').style.display = 'none'
       }
       eventTarget.style.width = '0%'
-      eventTarget.style.transitionDuration = '1s'
+      eventTarget.style.transitionDuration = '.4s'
       eventTarget.style.minWidth = '0%'
       setTimeout(function minWidthDecider() {
         eventTarget.style.width = '51%'
-        eventTarget.style.transitionDuration = '1s'
+        eventTarget.style.transitionDuration = '.4s'
         var maxRes = window.matchMedia('(max-width: 650px)');
         if(maxRes.matches) {
           eventTarget.style.minWidth = '88%'
@@ -67,7 +67,7 @@ window.onload = function() {
           eventTarget.style.minWidth = '0%'
         }
         maxRes.addListener(minWidthDecider);
-      },1500)
+      },800)
     });
   }
 }
