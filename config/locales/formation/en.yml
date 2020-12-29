@@ -1,0 +1,27 @@
+en:
+  formation:
+    formation_title: "Formation And Tools With On Hands Experience"
+
+  institution:
+    freecodecamp: "FreeCodeCamp"
+    amco: "Amco"
+    cultural: "Instituto Cultural México-Norteamericano"
+    aster: "Aster Education Center"
+    unadm: "Universidad Abierta y a Distancia de México"
+    cbtis: "CBTis #246"
+
+  certification:
+    freecodecamp: "Responsive Web Design Certification, Web Development"
+    amco: "English, Lvl B1+ Achived"
+    cultural: "English, Lvl 8th Basic"
+    aster: "Diploma, Windows Server 2012 Administering Windows Server 2012."
+    unadm: "Biotechnology Engineer"
+    cbtis: "Informatic Technician"
+
+  years:
+    freecodecamp: "2018 - 2018"
+    amco: "2017 - 2018"
+    cultural: "2016 - 2016"
+    aster: "2015 - 2015"
+    unadm: "2014 - 2014"
+    cbtis: "2009 - 2012"

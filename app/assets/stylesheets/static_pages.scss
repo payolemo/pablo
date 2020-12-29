@@ -293,6 +293,14 @@ button:focus {
   }
 }
 
+.formation-info {
+  white-space: normal !important;
+  overflow: hidden;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  height: 100%;
+}
+
 .profile-info {
   background-color: black;
 }
